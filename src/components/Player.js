@@ -5,12 +5,11 @@ import CardList from './CardList';
 
 export default function Player({
   player,
-  setTo,
   hand,
-  to,
 }) {
   const { selectedCard, setSelectedCard } = useContext(GameContext);
   const { setFrom } = useContext(GameContext);
+  const { to, setTo } = useContext(GameContext);
 
 
   return (
