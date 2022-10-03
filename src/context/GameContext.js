@@ -9,7 +9,7 @@ const GameProvider = ({ children }) => {
     
   const [selectedCard, setSelectedCard] = useState();
   const [to, setTo] = useState(1);
-  const [from, setFrom] = useState('deck');
+  const [from, setFrom] = useState();
   const [deck, setDeck] = useState(initialCards);
   const [playerOneHand, setPlayerOneHand] = useState([]);
   const [playerTwoHand, setPlayerTwoHand] = useState([]);
