@@ -1,6 +1,5 @@
 import React from 'react';
-import { useContext } from 'react';
-import { GameContext } from '../context/GameContext';
+import { useGameContext } from '../context/GameContext';
 
 const suitMap = {
   hearts: '❤️',
@@ -11,8 +10,11 @@ const suitMap = {
 
 export default function Card({ card, player }) {
 
-  const { selectedCard, setSelectedCard } = useContext(GameContext);
-  const { setFrom } = useContext(GameContext);
+  const {
+    selectedCard,
+    setSelectedCard,
+    setFrom
+  } = useGameContext();
 
   function handleCardClick() {
     setFrom(player);
