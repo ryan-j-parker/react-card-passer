@@ -5,11 +5,11 @@ import Card from './Card';
 
 export default function ExecutePassButton({
   passCard,
-  setFrom,
-  from,
   to,
 }) {
   const { selectedCard, setSelectedCard } = useContext(GameContext);
+  const { from, setFrom } = useContext(GameContext);
+
 
   return (
     <div className="execute-button" onClick={() => passCard(selectedCard)}>

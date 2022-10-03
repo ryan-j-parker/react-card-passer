@@ -4,14 +4,14 @@ import { GameContext } from '../context/GameContext';
 import CardList from './CardList';
 
 export default function Player({
-  children,
   player,
   setTo,
   hand,
-  setFrom,
   to,
 }) {
   const { selectedCard, setSelectedCard } = useContext(GameContext);
+  const { setFrom } = useContext(GameContext);
+
 
   return (
     <div
